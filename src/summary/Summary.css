@@ -12,6 +12,11 @@
   margin-top:  20px;
 
 }
+#Register:hover {
+
+  background-color : gray;
+
+}
 .item, .total{
 
   display : flex;

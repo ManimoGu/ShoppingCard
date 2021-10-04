@@ -1,7 +1,7 @@
 import React, { useRef, useState} from "react";
 import "./Product.css";
 
-const Product = ({ article, EditQuantity, addItem, minus}) => {
+const Product = ({ article, EditQuantity, addItem, minus, removeItem}) => {
   const Quant = useRef();
   const [TotalQuantity, setTotalQuantity] = useState(article.price);
 
@@ -45,8 +45,14 @@ const Product = ({ article, EditQuantity, addItem, minus}) => {
             }}
           ></i>
         </div>
-        <span>{TotalQuantity}</span>
-        <i className="fas fa-times"></i>
+        <span>{TotalQuantity} $</span>
+        <i className="fas fa-times" onClick ={() => {
+
+           var response = window.confirm("Are you sure you want to delete this item");
+          if (response) {removeItem(article);}
+          
+          
+          }}></i>
       </div>
     </div>
   );
