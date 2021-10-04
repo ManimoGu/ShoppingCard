@@ -12,7 +12,7 @@ function App(props) {
         "https://contents.mediadecathlon.com/p1901255/k$8870d3bdfed8faa1f8b3422de5d92354/t-shirt-100-coton-fitness-sportee-noir.jpg?&f=452x452",
       type: "pull",
       fabric: "coton",
-      price: 20,
+      price: 30,
       Quantity: 1,
     },
 
@@ -22,7 +22,7 @@ function App(props) {
         "https://www.zeeman.com/media/catalog/product/cache/5050dbc22447fab33b3d2c8a729076f7/2/0/2020095597986_Front_01.jpg",
       type: "Shirt",
       fabric: "coton",
-      price: 20,
+      price: 40,
       Quantity: 1,
     },
 
